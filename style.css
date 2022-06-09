@@ -1,0 +1,300 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fefbe9;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+button{
+    background-color: #183a1d ;
+    color: #e1eedd;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+button a{
+    color: #e1eedd;
+    text-decoration: none;
+}
+
+button:hover{
+    background-color: #f6c453;
+    border-color: #f6c453;
+    color: #183a1d;
+}
+
+button a:hover{
+    color: #183a1d;
+    font-weight: bold;
+}
+
+#main-header{
+    color: #f0a04b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-family: 'Concert One', cursive;
+
+}
+#main-header img{
+    height: 70px;
+}
+
+/*NAVBAR*/
+
+#navbar{
+    background-color: #e1eedd;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar ul{
+    list-style: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+#navbar li{
+    padding: 10px;
+
+}
+#navbar a{
+    color: #183a1d ;
+    text-decoration: none;
+}
+
+.search-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search-bar button{
+    padding: 8px;
+    font-size: 13px;
+
+}
+
+.search-bar input{
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+    
+/* SHOWCASE */
+
+#showcase{
+    background-image: url(Image/Pastaphoto.JPG);
+    background-position: center right;
+    min-height: 300px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#showcase .container{
+    background-color: #fefbe9;
+    border-style: double;
+    width: 400px;
+    padding: 30px;
+    margin-right: 15px;
+    color: #f0a04b;
+    font-family: 'Handlee', cursive;
+    font-size: 22px;
+}
+
+/* BODY */
+
+#main{
+   display: flex;
+   justify-content: space-around;
+   
+}
+
+.container{
+    background-color: #e1eedd;
+    padding: 20px;
+    padding-left: 30px;
+    width: 980px;
+
+  
+
+}
+
+.container img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 500px;
+    border-radius: 10px;
+
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+}
+
+#main .container h1{
+    color: #183a1d;
+    font-family: 'Concert One', cursive;
+    
+}
+
+#main .container h3{
+    color: #f0a04b;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    
+}
+
+.main-left{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+}
+
+/*SIDEBAR*/
+
+#sidebar{
+    padding: 10px;
+    padding-top: 0;
+    width: 300px;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile img{
+    height: 160px;
+    width: 160px;
+    border-radius: 80px;
+    margin-bottom: 15px;
+    display: flex;
+}
+
+#sidebar p{
+    text-align: center;
+}
+
+.profile h4{
+    font-size: 26px;
+    color: #183a1d;
+    text-align: center;
+    font-family: 'Handlee', cursive;
+}
+.profile{
+    background-color: #f6c453;
+    padding: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+    
+}
+
+.form{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+
+}
+
+.form h3{
+    color:#fefbe9;
+    background-color:#f6c453;
+    padding: 1px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border:#f0a04b;
+    border-style:dashed;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: 'Concert One', cursive;
+}
+
+.form img{
+    width: 280px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.promo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.promo h3{
+    color: #f0a04b;
+    text-align: center;
+    font-size: 23px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: 'Concert One', cursive;
+}
+
+.promo img{
+    width: 280px;
+    margin-bottom: 15px;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color:#f6c453;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    
+}
+
+
+@media(max-width:700px){
+    #main{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+
+    #navbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sidebar{
+        width: 100%;
+    }
+    .profile{
+        padding: 30px;
+        border-radius: 10px;
+    }
+    .form img{
+        width: 550px;
+    }
+}
